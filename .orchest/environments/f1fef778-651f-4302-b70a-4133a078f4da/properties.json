@@ -1,0 +1,1 @@
+{"base_image": "orchest/base-kernel-py", "gpu_support": false, "name": "image-super-resolution", "uuid": "f1fef778-651f-4302-b70a-4133a078f4da", "language": "python"}
