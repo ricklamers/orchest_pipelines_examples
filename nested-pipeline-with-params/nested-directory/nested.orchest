@@ -1,0 +1,79 @@
+{
+    "name": "nested",
+    "parameters": {},
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "1d3cf271-ca07-46cb-b3b3-1fed8ba00914": {
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "file_path": "sub-nested-directory/assert-inputs.ipynb",
+            "incoming_connections": [
+                "af5ea8e8-1559-4eed-854c-1e55baabd57d"
+            ],
+            "kernel": {
+                "display_name": "image-super-resolution",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    1184.479381443299,
+                    374.7113402061856
+                ]
+            },
+            "parameters": {},
+            "title": "assert-inputs",
+            "uuid": "1d3cf271-ca07-46cb-b3b3-1fed8ba00914"
+        },
+        "af5ea8e8-1559-4eed-854c-1e55baabd57d": {
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "file_path": "get-input-and-modify.ipynb",
+            "incoming_connections": [
+                "e4f14273-c8db-4b39-80d8-b4e9a6d33c06"
+            ],
+            "kernel": {
+                "display_name": "image-super-resolution",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    748.479381443299,
+                    392.7113402061856
+                ]
+            },
+            "parameters": {},
+            "title": "get-inputs-and-modify ",
+            "uuid": "af5ea8e8-1559-4eed-854c-1e55baabd57d"
+        },
+        "e4f14273-c8db-4b39-80d8-b4e9a6d33c06": {
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "file_path": "../get-params.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "image-super-resolution",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    392.47938144329896,
+                    426.7113402061856
+                ]
+            },
+            "parameters": {
+                "1": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "title": "get-params",
+            "uuid": "e4f14273-c8db-4b39-80d8-b4e9a6d33c06"
+        }
+    },
+    "uuid": "4ddf5c7a-3cd9-4395-a62f-23bda45e67d4",
+    "version": "1.0.0"
+}
