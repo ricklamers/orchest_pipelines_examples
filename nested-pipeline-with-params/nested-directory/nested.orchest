@@ -7,20 +7,20 @@
     },
     "steps": {
         "1d3cf271-ca07-46cb-b3b3-1fed8ba00914": {
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
             "file_path": "sub-nested-directory/assert-inputs.ipynb",
             "incoming_connections": [
                 "af5ea8e8-1559-4eed-854c-1e55baabd57d"
             ],
             "kernel": {
-                "display_name": "image-super-resolution",
+                "display_name": "Python3",
                 "name": "python"
             },
             "meta_data": {
                 "hidden": false,
                 "position": [
-                    1184.479381443299,
-                    374.7113402061856
+                    1188.479381443299,
+                    375.7113402061856
                 ]
             },
             "parameters": {},
@@ -28,19 +28,19 @@
             "uuid": "1d3cf271-ca07-46cb-b3b3-1fed8ba00914"
         },
         "af5ea8e8-1559-4eed-854c-1e55baabd57d": {
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
             "file_path": "get-input-and-modify.ipynb",
             "incoming_connections": [
                 "e4f14273-c8db-4b39-80d8-b4e9a6d33c06"
             ],
             "kernel": {
-                "display_name": "image-super-resolution",
+                "display_name": "Python3",
                 "name": "python"
             },
             "meta_data": {
                 "hidden": false,
                 "position": [
-                    748.479381443299,
+                    749.479381443299,
                     392.7113402061856
                 ]
             },
@@ -49,18 +49,18 @@
             "uuid": "af5ea8e8-1559-4eed-854c-1e55baabd57d"
         },
         "e4f14273-c8db-4b39-80d8-b4e9a6d33c06": {
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
             "file_path": "../get-params.ipynb",
             "incoming_connections": [],
             "kernel": {
-                "display_name": "image-super-resolution",
+                "display_name": "Python3",
                 "name": "python"
             },
             "meta_data": {
                 "hidden": false,
                 "position": [
-                    392.47938144329896,
-                    426.7113402061856
+                    393.47938144329896,
+                    430.7113402061856
                 ]
             },
             "parameters": {
