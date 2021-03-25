@@ -1,118 +1,34 @@
 {
     "name": "super-resolution-multiple",
-    "version": "1.0.0",
-    "uuid": "96931855-39dc-468e-a14f-2c184f7a3bd9",
     "settings": {
         "auto_eviction": false,
         "data_passing_memory_size": "1GB"
     },
     "steps": {
-        "51dca1d5-c0a2-41d3-89ef-614f3109e89f": {
-            "title": "get-data",
-            "uuid": "51dca1d5-c0a2-41d3-89ef-614f3109e89f",
-            "incoming_connections": [],
-            "file_path": "get-data.ipynb",
-            "kernel": {
-                "name": "python",
-                "display_name": "Python3"
-            },
-            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
-            "parameters": {},
-            "meta_data": {
-                "position": [
-                    117.34412236043124,
-                    335.23678444112534
-                ],
-                "hidden": false
-            }
-        },
-        "8c4a5af9-49aa-4fc7-8536-be76d203fc3b": {
-            "title": "psnr-small ",
-            "uuid": "8c4a5af9-49aa-4fc7-8536-be76d203fc3b",
-            "incoming_connections": [
-                "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
-            ],
-            "file_path": "psnr-small.ipynb",
-            "kernel": {
-                "name": "python",
-                "display_name": "image-super-resolution"
-            },
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
-            "parameters": {},
-            "meta_data": {
-                "position": [
-                    622.2915810844504,
-                    51.07216213328263
-                ],
-                "hidden": false
-            }
-        },
         "3eede785-ae13-4ece-8b3f-6b5c2687162a": {
-            "title": "psnr-large",
-            "uuid": "3eede785-ae13-4ece-8b3f-6b5c2687162a",
-            "incoming_connections": [
-                "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
-            ],
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
             "file_path": "psnr-large.ipynb",
-            "kernel": {
-                "name": "python",
-                "display_name": "image-super-resolution"
-            },
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
-            "parameters": {},
-            "meta_data": {
-                "position": [
-                    625.2915810844504,
-                    185.07216213328263
-                ],
-                "hidden": false
-            }
-        },
-        "bc330ab2-59e3-42df-896c-6ef5d525bf5d": {
-            "title": "noise-cancel",
-            "uuid": "bc330ab2-59e3-42df-896c-6ef5d525bf5d",
             "incoming_connections": [
                 "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
             ],
-            "file_path": "noise-cancel.ipynb",
             "kernel": {
-                "name": "python",
-                "display_name": "image-super-resolution"
+                "display_name": "image-super-resolution",
+                "name": "python"
             },
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
-            "parameters": {},
             "meta_data": {
+                "hidden": false,
                 "position": [
-                    588.1927559289563,
-                    317.694829721396
-                ],
-                "hidden": false
-            }
-        },
-        "cd02efbe-4e8d-4cdd-bbcb-b78dff6131bb": {
-            "title": "gan",
-            "uuid": "cd02efbe-4e8d-4cdd-bbcb-b78dff6131bb",
-            "incoming_connections": [
-                "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
-            ],
-            "file_path": "gan.ipynb",
-            "kernel": {
-                "name": "python",
-                "display_name": "image-super-resolution"
+                    440.2915810844504,
+                    250.07216213328263
+                ]
             },
-            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
             "parameters": {},
-            "meta_data": {
-                "position": [
-                    601.2915810844504,
-                    442.07216213328263
-                ],
-                "hidden": false
-            }
+            "title": "psnr-large",
+            "uuid": "3eede785-ae13-4ece-8b3f-6b5c2687162a"
         },
         "41f28ed7-9813-46bc-95e3-b4e84e3bf27c": {
-            "title": "  collect-results",
-            "uuid": "41f28ed7-9813-46bc-95e3-b4e84e3bf27c",
+            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
+            "file_path": "collect-results.ipynb",
             "incoming_connections": [
                 "51dca1d5-c0a2-41d3-89ef-614f3109e89f",
                 "8c4a5af9-49aa-4fc7-8536-be76d203fc3b",
@@ -120,20 +36,104 @@
                 "bc330ab2-59e3-42df-896c-6ef5d525bf5d",
                 "cd02efbe-4e8d-4cdd-bbcb-b78dff6131bb"
             ],
-            "file_path": "collect-results.ipynb",
             "kernel": {
-                "name": "python",
-                "display_name": "Python3"
+                "display_name": "Python3",
+                "name": "python"
             },
-            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
-            "parameters": {},
             "meta_data": {
+                "hidden": false,
                 "position": [
-                    854.2800651796517,
-                    698.2778829958386
-                ],
-                "hidden": false
-            }
+                    814.2800651796517,
+                    313.2778829958386
+                ]
+            },
+            "parameters": {},
+            "title": "  collect-results",
+            "uuid": "41f28ed7-9813-46bc-95e3-b4e84e3bf27c"
+        },
+        "51dca1d5-c0a2-41d3-89ef-614f3109e89f": {
+            "environment": "25b88b34-426e-478b-953a-b47a00b2cd44",
+            "file_path": "get-data.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    96.34412236043124,
+                    314.23678444112534
+                ]
+            },
+            "parameters": {},
+            "title": "get-data",
+            "uuid": "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
+        },
+        "8c4a5af9-49aa-4fc7-8536-be76d203fc3b": {
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "file_path": "psnr-small.ipynb",
+            "incoming_connections": [
+                "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
+            ],
+            "kernel": {
+                "display_name": "image-super-resolution",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    442.2915810844504,
+                    126.07216213328263
+                ]
+            },
+            "parameters": {},
+            "title": "psnr-small ",
+            "uuid": "8c4a5af9-49aa-4fc7-8536-be76d203fc3b"
+        },
+        "bc330ab2-59e3-42df-896c-6ef5d525bf5d": {
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "file_path": "noise-cancel.ipynb",
+            "incoming_connections": [
+                "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
+            ],
+            "kernel": {
+                "display_name": "image-super-resolution",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    437.19275592895633,
+                    375.694829721396
+                ]
+            },
+            "parameters": {},
+            "title": "noise-cancel",
+            "uuid": "bc330ab2-59e3-42df-896c-6ef5d525bf5d"
+        },
+        "cd02efbe-4e8d-4cdd-bbcb-b78dff6131bb": {
+            "environment": "f1fef778-651f-4302-b70a-4133a078f4da",
+            "file_path": "gan.ipynb",
+            "incoming_connections": [
+                "51dca1d5-c0a2-41d3-89ef-614f3109e89f"
+            ],
+            "kernel": {
+                "display_name": "image-super-resolution",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    436.2915810844504,
+                    504.07216213328263
+                ]
+            },
+            "parameters": {},
+            "title": "gan",
+            "uuid": "cd02efbe-4e8d-4cdd-bbcb-b78dff6131bb"
         }
-    }
+    },
+    "uuid": "96931855-39dc-468e-a14f-2c184f7a3bd9",
+    "version": "1.0.0"
 }
